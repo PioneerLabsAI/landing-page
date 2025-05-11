@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="600px" viewBox="0 0 800 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>About Image</title>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#6366F1" offset="0%"></stop>
+            <stop stop-color="#8B5CF6" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#10B981" offset="0%"></stop>
+            <stop stop-color="#3B82F6" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="About-Image" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <!-- Background Elements -->
+        <circle id="Circle1" fill="url(#linearGradient-1)" opacity="0.1" cx="400" cy="300" r="250"></circle>
+        
+        <!-- Team Silhouettes -->
+        <g id="Team" transform="translate(200, 150)">
+            <!-- Person 1 -->
+            <g id="Person1" transform="translate(0, 0)">
+                <circle id="Head1" fill="#111827" cx="50" cy="50" r="30"></circle>
+                <rect id="Body1" fill="#111827" x="30" y="80" width="40" height="120" rx="5"></rect>
+                <rect id="Arm1-1" fill="#111827" x="0" y="100" width="30" height="20" rx="5"></rect>
+                <rect id="Arm1-2" fill="#111827" x="70" y="100" width="30" height="20" rx="5"></rect>
+            </g>
+            
+            <!-- Person 2 -->
+            <g id="Person2" transform="translate(150, 0)">
+                <circle id="Head2" fill="#6366F1" cx="50" cy="50" r="30"></circle>
+                <rect id="Body2" fill="#6366F1" x="30" y="80" width="40" height="120" rx="5"></rect>
+                <rect id="Arm2-1" fill="#6366F1" x="0" y="100" width="30" height="20" rx="5"></rect>
+                <rect id="Arm2-2" fill="#6366F1" x="70" y="100" width="30" height="20" rx="5"></rect>
+            </g>
+            
+            <!-- Person 3 -->
+            <g id="Person3" transform="translate(300, 0)">
+                <circle id="Head3" fill="#10B981" cx="50" cy="50" r="30"></circle>
+                <rect id="Body3" fill="#10B981" x="30" y="80" width="40" height="120" rx="5"></rect>
+                <rect id="Arm3-1" fill="#10B981" x="0" y="100" width="30" height="20" rx="5"></rect>
+                <rect id="Arm3-2" fill="#10B981" x="70" y="100" width="30" height="20" rx="5"></rect>
+            </g>
+        </g>
+        
+        <!-- Connection Lines -->
+        <path d="M250,230 L350,230" id="Connection1" stroke="#6366F1" stroke-width="3" stroke-dasharray="5,5"></path>
+        <path d="M400,230 L500,230" id="Connection2" stroke="#10B981" stroke-width="3" stroke-dasharray="5,5"></path>
+        
+        <!-- Tech Icons -->
+        <g id="TechIcons" transform="translate(150, 350)">
+            <!-- AI Icon -->
+            <circle id="AICircle" fill="rgba(99, 102, 241, 0.1)" cx="75" cy="75" r="50"></circle>
+            <text font-family="Arial" font-size="24" font-weight="bold" fill="#6366F1" x="55" y="83">AI</text>
+            
+            <!-- ML Icon -->
+            <circle id="MLCircle" fill="rgba(16, 185, 129, 0.1)" cx="225" cy="75" r="50"></circle>
+            <text font-family="Arial" font-size="24" font-weight="bold" fill="#10B981" x="205" y="83">ML</text>
+            
+            <!-- NLP Icon -->
+            <circle id="NLPCircle" fill="rgba(59, 130, 246, 0.1)" cx="375" cy="75" r="50"></circle>
+            <text font-family="Arial" font-size="24" font-weight="bold" fill="#3B82F6" x="350" y="83">NLP</text>
+            
+            <!-- Connection Lines -->
+            <path d="M125,75 L175,75" id="TechConnection1" stroke="#6366F1" stroke-width="2"></path>
+            <path d="M275,75 L325,75" id="TechConnection2" stroke="#10B981" stroke-width="2"></path>
+        </g>
+    </g>
+</svg>
