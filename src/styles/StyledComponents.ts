@@ -60,6 +60,7 @@ export const Button = styled.button`
 
 export const Section = styled.section`
   padding: 5rem 0;
+  width: 100%; // Ensure section takes full width to allow container to center within it
   
   &.hero {
     min-height: 90vh;
@@ -87,12 +88,17 @@ export const Section = styled.section`
 export const Container = styled.div`
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin-left: auto; // Changed from margin: 0 auto;
+  margin-right: auto; // Changed from margin: 0 auto;
   padding: 0 1.5rem;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
 `;
 
 export const Flex = styled.div`
   display: flex;
+  width: 100%; // Ensure Flex takes full width of its parent (Container)
   
   &.column {
     flex-direction: column;
@@ -122,6 +128,7 @@ export const Flex = styled.div`
   @media (max-width: 768px) {
     &.responsive {
       flex-direction: column;
+      align-items: center; // Center items in responsive mode too
     }
   }
 `;
@@ -130,6 +137,7 @@ export const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 2rem;
+  width: 100%; // Ensure Grid takes full width
   
   @media (max-width: 768px) {
     grid-template-columns: repeat(1, 1fr);
@@ -142,6 +150,7 @@ export const Card = styled.div`
   padding: 2rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
+  width: 100%; // Ensure card can be centered if it's a direct child of Container
   
   &:hover {
     transform: translateY(-5px);
@@ -157,6 +166,7 @@ export const Card = styled.div`
 export const Title = styled.h2`
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
+  text-align: center; // Default to center, can be overridden
   
   &.hero-title {
     font-size: 3.5rem;
@@ -181,7 +191,11 @@ export const Subtitle = styled.p`
   font-size: 1.25rem;
   color: var(--gray);
   margin-bottom: 2rem;
-  
+  text-align: center; // Default to center, can be overridden
+  max-width: 700px; // Add max-width for better readability of centered text
+  margin-left: auto;
+  margin-right: auto;
+
   &.hero-subtitle {
     font-size: 1.5rem;
     max-width: 600px;
@@ -204,3 +218,4 @@ export const Badge = styled.span`
   color: var(--primary);
   margin-bottom: 1rem;
 `;
+
