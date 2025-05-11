@@ -86,14 +86,12 @@ export const Section = styled.section`
 `;
 
 export const Container = styled.div`
+  /* keeps the content centred in the viewport */
   width: 100%;
   max-width: 1200px;
-  margin-left: auto; // Changed from margin: 0 auto;
-  margin-right: auto; // Changed from margin: 0 auto;
-  padding: 0 1.5rem;
-  display: flex; 
-  flex-direction: column; 
-  align-items: center; 
+  margin: 0 auto;          /* centres the block itself */
+  padding: 0 1.5rem;       /* side-gutters */
+
 `;
 
 export const Flex = styled.div`
